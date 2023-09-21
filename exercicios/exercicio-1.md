@@ -1,26 +1,22 @@
-## Quantidade de Alunos Aprovados
-
-Ao final do curso de JavaScript, os alunos devem receber suas notas e saber se foram aprovados ou não. Antes de publicar as notas, o professor deseja saber quantos alunos passaram.
-Você recebeu uma lista com os dados dos alunos, onde cada aluno é representado por um objeto com os atributos nome e nota. A nota é um número inteiro que varia de 0 a 100.
-Para ser aprovado, o aluno deve ter uma nota maior ou igual a 70.
+## Produtos em Estoque
+#### Uma loja de eletrônicos precisa saber quantos produtos diferentes possui em estoque. Você recebeu uma lista com os dados dos produtos, onde cada produto é representado por um objeto com os atributos nome e quantidade. A quantidade é um número inteiro que representa a quantidade de unidades disponíveis em estoque para cada produto.
 
 #### Exemplo de entrada:
-
 ```
-const alunos = [
-  { nome: "João", nota: 80 },
-  { nome: "Maria", nota: 65 },
-  { nome: "Pedro", nota: 90 },
-  { nome: "Ana", nota: 75 },
-  { nome: "Carlos", nota: 60 },
+const produtos = [
+  { nome: "Celular", quantidade: 10 },
+  { nome: "Notebook", quantidade: 5 },
+  { nome: "TV", quantidade: 3 },
+  { nome: "Fone de Ouvido", quantidade: 20 },
+  { nome: "Câmera", quantidade: 8 },
 ];
 ```
+
 #### Exemplo de saída:
 ```
-Quantidade de alunos aprovados: 3
+Quantidade de produtos em estoque: 5
 ```
+#### Para resolver esse problema, crie uma função chamada quantidadeProdutosEstoque que deve:
 
-- Para resolver esse problema, crie uma função chamada quantidadeAprovados que deve:
-
-1. Receber um array de objetos onde cada objeto seja composto pelos atributos nome e nota.
-2. Retornar a quantidade de alunos aprovados.
+- Receber um array de objetos onde cada objeto seja composto pelos atributos nome e quantidade.
+- Retornar a quantidade de produtos diferentes em estoque.

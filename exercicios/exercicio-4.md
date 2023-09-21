@@ -1,19 +1,20 @@
 ## Remover Feedbacks Duplicados
+#### Um professor de matemática pediu para seus alunos escreverem uma lista de números inteiros. Após a coleta, ele percebeu que alguns alunos escreveram números repetidos.
 
-#### Um consultor de marketing sugeriu que uma empresa coletasse feedbacks de seus usuários.
-#### Após o fim da coleta eles perceberam que vários usuários reportaram as mesmas sugestões.
-#### Segue o modelo coletado:
-
+#### Segue a lista coletada:
 ```
-const feedbacks = [
-  "Melhorar responsividade do site",
-  "Erros confusos",
-  "Os botões são intuitivos",
-  "Erros confusos",
-];
+const numeros = [1, 2, 3, 4, 5, 2, 3, 6, 7, 8, 9, 1, 10];
+```
+#### Para resolver esse problema, crie uma função chamada removerNumerosRepetidos que deve:
+
+#### Receber um array de números inteiros.
+#### Retornar esse array sem valores repetidos.
+#### Exemplo de entrada:
+```
+const numeros = [1, 2, 3, 4, 5, 2, 3, 6, 7, 8, 9, 1, 10];
 ```
 
-- Para resolver esse problema, crie uma função chamada removerFeedbacksDuplicados que deve:
-
-1. Receber um array de string.
-2. Retornar esse array sem valores duplicados. 
+#### Exemplo de saída:
+```
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+```

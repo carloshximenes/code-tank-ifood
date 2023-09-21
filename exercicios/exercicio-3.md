@@ -1,19 +1,27 @@
-## Ordenar Livros da Biblioteca 
+## Organizar Tarefas
+#### Você está desenvolvendo um aplicativo de gerenciamento de tarefas e precisa implementar a funcionalidade de organizar as tarefas em ordem de prioridade. Cada tarefa é representada por um objeto com os atributos nome e prioridade. A prioridade é um número inteiro que varia de 1 a 5, sendo 1 a mais alta prioridade e 5 a mais baixa prioridade.
 
-#### A biblioteca de uma universidade federal está sendo digitalizada. O catálogo dos livros já está presente dentro de um sistema desenvolvido internamente:
+#### Exemplo de entrada:
+```
+const tarefas = [
+  { nome: "Estudar para a prova", prioridade: 3 },
+  { nome: "Fazer compras", prioridade: 5 },
+  { nome: "Preparar apresentação", prioridade: 2 },
+  { nome: "Limpar a casa", prioridade: 4 },
+  { nome: "Resolver pendências no trabalho", prioridade: 1 },
+];
+```
 
-    const livros = [
-      { autor: "Guimarães Rosa", titulo: "Grande Sertão: Veredas", livroID: 1254 },
-      { autor: "Jorge Amado", titulo: "Capitães da Areia", livroID: 4264 },
-      {
-        autor: "Clarice Lispector",
-        titulo: "A Hora da Estrela",
-        livroID: 3245,
-      },
-    ];
-
-- O funcionário responsável pela catalogação agora precisa ordenar os livros pelo título para apresentar no site da biblioteca.
-- Para resolver esse problema, crie uma função chamada ordenarLivros que deve:
-
-1. Receber um array de objetos onde cada objeto seja composto pelos atributos autor, titulo e livroID.
-2. Retornar esse array com seus objetos em ordem alfabética crescente usando o titulo do livro. 
+#### Exemplo de saída:
+```
+[
+  { nome: "Resolver pendências no trabalho", prioridade: 1 },
+  { nome: "Preparar apresentação", prioridade: 2 },
+  { nome: "Estudar para a prova", prioridade: 3 },
+  { nome: "Limpar a casa", prioridade: 4 },
+  { nome: "Fazer compras", prioridade: 5 },
+]
+```
+#### Para resolver esse problema, crie uma função chamada organizarTarefas que deve:
+- Receber um array de objetos onde cada objeto seja composto pelos atributos nome e prioridade.
+- Retornar esse array com as tarefas organizadas em ordem crescente de prioridade.

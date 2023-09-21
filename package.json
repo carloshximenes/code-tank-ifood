@@ -1,0 +1,19 @@
+{
+  "name": "coding-tank-ifood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "agenda.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carloshximenes/code-tank-ifood.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carloshximenes/code-tank-ifood/issues"
+  },
+  "homepage": "https://github.com/carloshximenes/code-tank-ifood#readme"
+}

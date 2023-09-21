@@ -1,12 +1,8 @@
 ## Quantidade de Alunos Aprovados
 
-#### Ao final do curso de JavaScript, os alunos devem receber suas notas e saber se foram aprovados ou não. Antes de publicar as notas, o professor deseja saber quantos alunos passaram.
-
-#### Você recebeu uma lista com os dados dos alunos, onde cada aluno é representado por um objeto com os atributos nome e nota. A nota é um número inteiro que varia de 0 a 100.
-
-#### Escreva uma função chamada quantidadeAprovados que recebe essa lista como parâmetro e retorna a quantidade de alunos aprovados.
-
-#### Para ser aprovado, o aluno deve ter uma nota maior ou igual a 70.
+Ao final do curso de JavaScript, os alunos devem receber suas notas e saber se foram aprovados ou não. Antes de publicar as notas, o professor deseja saber quantos alunos passaram.
+Você recebeu uma lista com os dados dos alunos, onde cada aluno é representado por um objeto com os atributos nome e nota. A nota é um número inteiro que varia de 0 a 100.
+Para ser aprovado, o aluno deve ter uma nota maior ou igual a 70.
 
 #### Exemplo de entrada:
 

@@ -5,17 +5,49 @@
     <title>My First Web Page</title>
 </head>
 <body>
-    <ul id="minhaLista"></ul>
-    <button onclick="alert('oi')">Adicionar Contato</button>
-    <button onclick="procurarContato()">Procurar Contato</button>
-    <button onclick="descobrirOcorrenciaNome()">Conte Contatos</button>
-    <button onclick="deletarContato()">Deletar Contato</button>
+    <!-- <ul id="minhaLista"></ul> -->
+    <button onclick="encontrarNumerosQueSeRepetem(numeros)">Numeros que se Repetem</button>
+    <button onclick="quantasPalavrasTem(conjuntoDeNomes)">Quantas Palavras Tem</button>
 </body>
 <script src="./script.js"></script>
 <script src="./agenda.js"></script>
 <script>
-    function procurarContato() {
-        alert('oi');
+    const rerer = prompt('blablabla');
+    const numeros = [2, 7, 5, 9, 11, 7, 9, 2, 2, 2, 2, 2, 5];
+
+    const encontrarNumerosQueSeRepetem = (array) => {
+        console.log(array);
+    const numerosQueSeRepetem = [];
+    const primeiraOcorrenciaDosNumeros = [];
+
+    for(let i = 0; i < array.length; i++) {
+        const numeroDaVez = array[i];
+        if(primeiraOcorrenciaDosNumeros.includes(numeroDaVez)) {
+            if(!numerosQueSeRepetem.includes(numeroDaVez)) {
+                numerosQueSeRepetem.push(numeroDaVez);
+            }
+        } else {
+            primeiraOcorrenciaDosNumeros.push(numeroDaVez);
+        }
+    }
+    console.log(primeiraOcorrenciaDosNumeros);
+    console.log(numerosQueSeRepetem);
+    // return numerosQueSeRepetem;
+}
+</script>
+<script>
+    const conjuntoDeNomes = 'CarlosLeticiaPedroHiagoNayraDayanaCamilaRenata';
+
+    const quantasPalavrasTem = (texto) => {
+        let contador = 0;
+        for(let i = 0; i < texto.length; i++) {
+            const caractereAtual = texto[i];
+            if(caractereAtual === caractereAtual.toUpperCase()) {
+                contador++;
+            }
+        }
+        console.log(contador);
+        // return contador;
     }
 </script>
 </html>
